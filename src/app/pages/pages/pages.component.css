@@ -1,0 +1,33 @@
+.dosamdoasd{
+    position: absolute;
+      bottom: 100px;
+      right: 100px;
+      width: 200px;
+}
+
+.dsaod{
+    position: absolute;
+    color: white;
+    right: 50px;
+    top: 50px;
+    font-size: 16px;
+}
+
+.dsaodmsaod{
+    color: #016dc0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.dsoadmaosd{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #016dc0;
+    font-size: 50px;
+    font-weight: 700;
+
+  }

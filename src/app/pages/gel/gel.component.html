@@ -1,0 +1,60 @@
+<div style="text-align: center;">
+    <div style="position: relative;">
+        <h3 class="dsaodmsa">Gel</h3>
+        <img src="assets/img/gel/Grupo 3 copia.png" alt="" class="dsaodasod">
+    </div>
+    <p class="dsaodsa">
+        Aporta a tu <strong>casa, oficina y vehiculo un ambiente fresco y limpio</strong> con geles, son Clásicos en nuestra gama de ambientadores.
+         asegurate de darle tu toque personal escogiendo tu modelo preferido entre nuestra variedad de <strong>Gel Concha,
+            Gel Clásico Oval, Gel Clásico Surtido, Gel Lata</strong> y tu aroma preferido en nuestra gama de olores de <strong>frutas, flores y aromas frescos</strong>
+    </p>
+    <div class="row dasodcs"  >
+        <div class="col-6 " style="text-align: left;">
+            <img [src]="clasis[4].src" class="img-fluid dnsadosamdoa" style="    margin-right: 50px;">
+            <span class="dsaodmas">Gel Clasic</span>
+        </div>
+        <div class="col-6">
+            <img src="assets/img/flecha izquierda blanca para fondo azul.png" (click)="previoClasis()" class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+            <img [src]="clasis[clasisContador].src" class="img-fluid dnsadosamdoa" style="    margin-left: 30px;  margin-right: 30px;">
+            <img src="assets/img/flecha derecha blanca para fodno azul.png" (click)="nextClasis()"  class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+        </div>
+    </div>
+    <div class="row dasodoa"  >
+        <div class="col-6 " style="text-align: left;">
+            <img [src]="conchas[0].src" class="img-fluid dnsadosamdoa" style="    margin-right: 50px;">
+            <span class="dsaodmas2">Gel conchas</span>
+        </div>
+        <div class="col-6">
+            <img src="assets/img/flecha izquierda azul para fondo blanco.png" (click)="previoConchas()" class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+            <img [src]="conchas[conchasContador].src" class="img-fluid dnsadosamdoa" style="    margin-left: 30px;  margin-right: 30px;">
+            <img src="assets/img/flecha derecha azul para fondo blanco.png" (click)="nextConchas()"  class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+        </div>
+    </div>
+    <div class="row dasodcs"  >
+        <div class="col-6 " style="text-align: left;">
+            <img [src]="latas[0].src" class="img-fluid dnsadosamdoa" style="    margin-right: 50px;">
+            <span class="dsaodmas">Gel Lata</span>
+        </div>
+        <div class="col-6">
+            <img src="assets/img/flecha izquierda blanca para fondo azul.png" (click)="previoLatas()" class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+            <img [src]="latas[latasContador].src" class="img-fluid dnsadosamdoa" style="    margin-left: 30px;  margin-right: 30px;">
+            <img src="assets/img/flecha derecha blanca para fodno azul.png" (click)="nextLatas()"  class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+        </div>
+    </div>
+    <div class="row dasodoa" >
+        <div class="col-6 " style="text-align: left;">
+            <img [src]="ovals[0].src" class="img-fluid dnsadosamdoa" style="    margin-right: 50px;">
+            <span class="dsaodmas2">Gel oval</span>
+        </div>
+        <div class="col-6">
+            <img src="assets/img/flecha izquierda azul para fondo blanco.png" (click)="previoOvals()" class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+            <img [src]="ovals[ovalsContador].src" class="img-fluid dnsadosamdoa" style="    margin-left: 30px;  margin-right: 30px;">
+            <img src="assets/img/flecha derecha azul para fondo blanco.png" (click)="nextOvals()"  class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+        </div>
+    </div>
+
+
+    <div style="padding: 2rem;">
+        <img src="assets/img/flecha de siguiente.png" (click)="goNext()" style="cursor: pointer;" alt="">
+    </div>
+</div>

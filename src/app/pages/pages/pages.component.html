@@ -1,0 +1,95 @@
+
+<div class="container" style="position: relative;">
+    
+    <div style="position: relative;">
+      <nav class="navbar navbar-expand-lg" style="background-color: transparent !important;">
+        <div class="container">
+        <a class="navbar-brand"  (click)="goHome()" style="cursor: pointer;">
+            <img src="assets/img/logo.png" alt="Bootstrap" width="30" height="30">
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: auto;">
+              <li class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link dropdown-toggle dsaodmsaod" style="cursor: pointer;" id="dropdownBasic1" ngbDropdownToggle>
+                        Productos
+                    </a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <a class="dropdown-item " style="cursor: pointer;"  ngbDropdownItem routerLink="absorbe">Absorbe Olores</a>
+                        <a class="dropdown-item"  style="cursor: pointer;"  ngbDropdownItem routerLink="ambientadores">Ambientadores</a>
+                        <a class="dropdown-item"  style="cursor: pointer;"  ngbDropdownItem routerLink="colgadores">Colgadores</a>
+                        <a class="dropdown-item"  style="cursor: pointer;"  ngbDropdownItem routerLink="gel">Gel</a>
+                        <a class="dropdown-item"  style="cursor: pointer;"  ngbDropdownItem routerLink="petalos">Pétalos</a>
+                        <a class="dropdown-item"  style="cursor: pointer;"  ngbDropdownItem routerLink="spray">Spray</a>
+                    </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dsaodmsaod" style="cursor: pointer;" (click)="gotInfo()">Información</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dsaodmsaod" style="cursor: pointer;" >Contacto</a>
+              </li>
+            </ul>
+            <div class="d-flex" role="search">
+              <input class="form-control me-2" #val list="Listado" type="search" placeholder="Buscar producto" aria-label="Search">
+              <button class="btn btn-primary"  (click)="busqueda(val.value); val.value = '';">Buscar</button>
+
+              <datalist id="Listado">
+                <option  value="absorbe">Absorbe Olores</option>
+                <option  value="ambientadores">Ambientadores</option>
+                <option  value="colgadores">Colgadores</option>
+                <option  value="gel">Gel</option>
+                <option  value="petalos">Pétalos</option>
+                  <option  value="spray">Spray</option>
+            </datalist>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+        <img src="assets/img/header.png" alt="" style="width: 100%; margin-top: -65px;">
+        <span class="dsoadmaosd" *ngIf="!desactivarLogo">
+          Ambientadores
+      </span>
+     
+      <img src="assets/img/ambientadorLogo.png" *ngIf="!desactivarLogo" class="dosamdoasd">
+    </div>
+      <router-outlet></router-outlet>
+      <div style="position: relative;">
+        <img style="width: 100%;" src="assets/img/dsad.png" alt="">
+        <div class="row dsaod">
+          <div class="col-6">
+            <strong>Contacto</strong>
+            <br>
+            +58 498 928 8372
+            <br>
+            Correo:
+            <br>
+            <strong>Redes Sociales</strong>
+            <br>
+            Instagram: @tal
+          </div>
+          <div class="col-6">
+
+            <strong>Productos</strong>
+            <br>
+            Gel
+            <br>
+            Colgadores
+            <br>
+            Petalos
+            <br>
+            Spray
+            <br>
+            Ambientadores de baño
+            <br>
+            Absorve Olores
+          </div>
+        </div>
+      </div>
+</div>
+
+
+

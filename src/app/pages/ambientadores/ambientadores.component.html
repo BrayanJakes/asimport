@@ -1,0 +1,50 @@
+<div style="text-align: center;">
+    <div style="position: relative;">
+        <h3 class="dsaodmsa">Ambientadores de baño</h3>
+        <img src="assets/img/ambientadores/Grupo 9 copia.png" alt="" class="dsaodasod">
+    </div>
+    <p class="dsaodsa">
+        Los ambientadores colgadores para tu inodoro están disponibles en formatos <strong>agua azul,
+            W.C. transparentes</strong> con 4 aromas que hemos escogido para ti y <strong>W.C.
+                blanco</strong> este mantiene limpio y fresco tus descargas y elimina olores no deseados
+    </p>
+    <div class="row dasodcs"  >
+        <div class="col-1 " style="text-align: left;">
+            <img [src]="aguaAzul[0].src" class="img-fluid" style="    margin-right: 50px;">
+          
+        </div>
+        <div class="col-10" style="text-align: left;">
+            <p class="dsaodmas">Aguazul</p>
+            <p class="dsaodmasdsa">está disponible en dos formatos: colgador para la taza o pastillas para la cisterna.</p>
+            <p class="dsaodmasdsa">Elige el que mejor se adapte a tus necesidades y manten tu inodoro limpio y perfumado con un agradable aroma fresco.</p>
+            
+        </div>
+    </div>
+    <div class="row dasodoa"  >
+        <div class="col-6 " style="text-align: left;">
+            <img [src]="wcTrans[0].src" class="img-fluid dnsadosamdoa" style="    margin-right: 50px;">
+            <span class="dsaodmas2">WC Transparente</span>
+        </div>
+        <div class="col-6">
+            <img src="assets/img/flecha izquierda azul para fondo blanco.png" (click)="previoWcTrans()" class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+            <img [src]="wcTrans[wcTransContador].src" class="img-fluid dnsadosamdoa" style="    margin-left: 30px;  margin-right: 30px;">
+            <img src="assets/img/flecha derecha azul para fondo blanco.png" (click)="nextWcTrans()"  class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+        </div>
+    </div>
+    <div class="row dasodcs" >
+        <div class="col-6 " style="text-align: left;">
+            <img [src]="wcWhite[0].src" class="img-fluid dnsadosamdoa" style="    margin-right: 50px;">
+            <span class="dsaodmas">WC Blanco</span>
+        </div>
+        <div class="col-6">
+            <img src="assets/img/flecha izquierda blanca para fondo azul.png" (click)="previoWcWhite()" class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+            <img [src]="wcWhite[wcWhiteContador].src" class="img-fluid dnsadosamdoa" style="    margin-left: 30px;  margin-right: 30px;">
+            <img src="assets/img/flecha derecha blanca para fodno azul.png" (click)="nextWcWhite()"  class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+        </div>
+    </div>
+
+
+    <div style="padding: 2rem;">
+        <img src="assets/img/flecha de siguiente.png" (click)="goToNext()" style="cursor: pointer;" alt="">
+    </div>
+</div>

@@ -1,0 +1,31 @@
+
+
+ .dsadsadas img{
+    transition: transform .3s; 
+}
+ 
+.dsadsadas img:hover {
+    transform: scale(0.8); 
+    cursor: pointer;
+}
+
+
+ .dsoadmaosd{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  /* .dsadsadas .dsoadmaosd{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: auto;
+    height: auto;
+  } */

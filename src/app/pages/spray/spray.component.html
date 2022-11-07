@@ -1,0 +1,45 @@
+<div style="text-align: center;">
+    <div style="position: relative;">
+        <h3 class="dsaodmsa">Spray - Botellitas</h3>
+        <img src="assets/img/spray/Grupo 3 copia 3.png" alt="" class="dsaodasod">
+    </div>
+    <p class="dsaodsa" style="padding-bottom: 0rem;">
+        Las botellas auto spray están disponibles en formato de 55 ml y en 8 aromas diferentes.
+    </p>
+    <p class="dsaodsa" style="padding-top: 0rem; padding-bottom: 0rem;">
+        El colgador impregna el tapón de madera con la fragancia y envuelve tu coche con el perfume elegido,
+        nuestra botellita en forma de cristal está disponible en 8 perfumes diferentes.
+    </p>
+    <p class="dsaodsa" style="padding-top: 0rem;">
+        Las botellitas de mikado en su presentación de 30 ml, aporta en tu oficina y el hogar un acogedor
+        ambiente con sus diferentes aromas
+    </p>
+   
+    <div class="row dasodcs"  >
+        <div class="col-6 " style="text-align: left;">
+            <img [src]="sprays[0].src" class="img-fluid dnsadosamdoa" style="    margin-right: 50px;">
+            <span class="dsaodmas">Spray</span>
+        </div>
+        <div class="col-6">
+            <img src="assets/img/flecha izquierda blanca para fondo azul.png" (click)="previoSprays()" class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+            <img [src]="sprays[sprayContador].src" class="img-fluid dnsadosamdoa" style="    margin-left: 30px;  margin-right: 30px;">
+            <img src="assets/img/flecha derecha blanca para fodno azul.png" (click)="nextSprays()"  class="img-fluid dnsadosamdoa2" style="cursor: pointer;">
+        </div>
+    </div>
+
+    <div class="row dasodoa"  >
+        <div class="col-1 " style="text-align: left;">
+            <img [src]="botellitas[0].src" class="img-fluid" style="    margin-right: 50px;">
+          
+        </div>
+        <div class="col-10" style="text-align: left;">
+            <p class="dsaodmas2">Botellitas</p>
+            <p class="dsaodmasdsa2">Impregna el tapón de madera con la fragancia y envuelve tu coche con el perfume elegido. Nuestra botellita colgador en formato de cristal está disponible en 8 perfumes diferentes.</p>
+            
+        </div>
+    </div>
+
+    <div style="padding: 2rem;">
+        <img src="assets/img/flecha de siguiente.png" (click)="goToHome()" style="cursor: pointer;" alt="">
+    </div>
+</div>
