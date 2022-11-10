@@ -9,12 +9,12 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   productos = [
-    { route: 'gel', src: 'assets/img/gel.png'},
-    { route: 'colgadores', src: 'assets/img/golgadores.png'},
-    { route: 'petalos', src: 'assets/img/petalos.png'},
-    { route: 'spray', src: 'assets/img/sprayy.png'},
-    { route: 'ambientadores', src: 'assets/img/ambientadores de baño.png'},
-    { route: 'absorbe', src: 'assets/img/absorbe olores.png'},
+    { route: 'gel', src: 'assets/img/gel.png', changeText: false, name: 'Gel'},
+    { route: 'colgadores', src: 'assets/img/golgadores.png', changeText: false, name: 'Colgadores'},
+    { route: 'petalos', src: 'assets/img/petalos.png', changeText: false, name: 'Pétalos'},
+    { route: 'spray', src: 'assets/img/sprayy.png', changeText: false, name: 'Spray'},
+    { route: 'ambientadores', src: 'assets/img/ambientadores de baño.png', changeText: false, name: 'Ambientadores'},
+    { route: 'absorbe', src: 'assets/img/absorbe olores.png', changeText: false, name: 'Absorbe olores'},
   ]
 
   constructor(private router: Router) { 

@@ -1,14 +1,15 @@
 .dosamdoasd{
     position: absolute;
-      bottom: 100px;
-      right: 100px;
-      width: 200px;
+    bottom: 0px;
+    right: 100px;
+    width: 350px;
+
 }
 
 .dsaod{
     position: absolute;
     color: white;
-    right: 50px;
+    right: 120px;
     top: 50px;
     font-size: 16px;
 }
@@ -30,4 +31,25 @@
     font-size: 50px;
     font-weight: 700;
 
+  }
+
+  .dasodmsao{
+    background: #016dc0;
+    color: white;
+  }
+
+  .dasodmsao::placeholder {
+    color: white;
+  }
+
+  .asomdasod{
+    margin-top: 0.9px;
+    background: #016dc0;
+    margin-bottom: 0.9px;
+  }
+
+  .dsaodnsa{
+    width: 80px;
+    height: 80px;
+    position: absolute;
   }

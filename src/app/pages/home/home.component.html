@@ -1,16 +1,18 @@
 <div style="text-align: center;">
     <h3 class="dsaodmsa" style="text-align: center;">Productos</h3>
     <div class="row">
-        <div class="col-6 dsadsadas" style="position: relative;"
+        <div class="col-6 p-0 dsadsadas"
+        (mouseover)="item.changeText = true"
+        (mouseout)="item.changeText = false"
+        style="position: relative;"
         (click)="navigate(item.route)"
         *ngFor="let item of productos">
             <img [src]="item.src" class="img-fluid" alt="">
-            <!-- <span class="dsoadmaosd">Gel</span> -->
+            <div class="dsoadmaosd" style="font-weight: 600;" *ngIf="item.changeText">{{ item.name }}</div>
         </div>
     </div>
    <div style="position: relative;">
-    <img style="width: 100%;
-    padding-top: 1rem;" src="assets/img/homeAbajo.png" >
+    <img style="width: 100%;" src="assets/img/homeAbajo.png" >
 
         <span class="dsoadmaosd">
             La sociedad anónima AS import Global, ubicada en la región oriental de Venezuela es una extensión de la naviera AS ATLANTIC, cuya función es la atención de barcos de carga generales trayendo consigo logros en el área marítima, es por ellos que con la experiencia dentro de los mercados del comercio internacional decidimos aportar dentro del medio de las importaciones de consumo masivo trayendo los mejores productos y marcas originales de Europa y América

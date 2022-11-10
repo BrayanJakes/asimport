@@ -1,11 +1,11 @@
 
-<div class="container" style="position: relative;">
+<div style="position: relative; overflow-x: hidden;">
     
     <div style="position: relative;">
       <nav class="navbar navbar-expand-lg" style="background-color: transparent !important;">
         <div class="container">
         <a class="navbar-brand"  (click)="goHome()" style="cursor: pointer;">
-            <img src="assets/img/logo.png" alt="Bootstrap" width="30" height="30">
+            <img src="assets/img/logo.png" alt="Bootstrap" class="dsaodnsa">
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,8 +32,13 @@
                 <a class="nav-link dsaodmsaod" style="cursor: pointer;" >Contacto</a>
               </li>
             </ul>
+            
             <div class="d-flex" role="search">
-              <input class="form-control me-2" #val list="Listado" type="search" placeholder="Buscar producto" aria-label="Search">
+              <div class="input-group">
+                <input type="text" class="form-control dasodmsao" #val  list="Listado" placeholder="Buscar producto" >
+                <button class="btn asomdasod" type="button" id="button-addon2" (click)="busqueda(val.value); val.value = '';"><img src="assets/img/lupa.png" alt="" style="    width: 20px;"></button>
+              </div>
+              <!-- <input class="form-control me-2" #val list="Listado" type="search" placeholder="Buscar producto" aria-label="Search">
               <button class="btn btn-primary"  (click)="busqueda(val.value); val.value = '';">Buscar</button>
 
               <datalist id="Listado">
@@ -43,7 +48,16 @@
                 <option  value="gel">Gel</option>
                 <option  value="petalos">Pétalos</option>
                   <option  value="spray">Spray</option>
-            </datalist>
+            </datalist> -->
+
+            <datalist id="Listado">
+              <option  value="absorbe">Absorbe Olores</option>
+              <option  value="ambientadores">Ambientadores</option>
+              <option  value="colgadores">Colgadores</option>
+              <option  value="gel">Gel</option>
+              <option  value="petalos">Pétalos</option>
+                <option  value="spray">Spray</option>
+          </datalist>
 
             </div>
           </div>
@@ -58,7 +72,9 @@
     </div>
       <router-outlet></router-outlet>
       <div style="position: relative;">
+       
         <img style="width: 100%;" src="assets/img/dsad.png" alt="">
+       
         <div class="row dsaod">
           <div class="col-6">
             <strong>Contacto</strong>
