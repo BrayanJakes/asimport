@@ -63,7 +63,8 @@
           </div>
         </div>
       </nav>
-        <img loading="lazy"  src="assets/img/header.png" alt="" style="width: 100%; margin-top: -65px;">
+        <img loading="lazy"  src="assets/img/header.png" alt="" style="width: 100%; margin-top: -65px; height: 800px;" *ngIf="!desactivarLogo">
+        <img loading="lazy"  src="assets/img/header2.png" alt="" style="width: 100%; margin-top: -65px;" *ngIf="desactivarLogo">
         <span class="dsoadmaosd" *ngIf="!desactivarLogo">
           Ambientadores
       </span>
