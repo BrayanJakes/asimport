@@ -51,4 +51,11 @@ export class PagesComponent implements OnInit {
     
   }
 
+  contacto(){
+    window.scrollTo({
+      top: 10000,
+      behavior: 'smooth'
+    });
+  }
+
 }
